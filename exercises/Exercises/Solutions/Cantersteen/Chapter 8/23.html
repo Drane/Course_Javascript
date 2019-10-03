@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Architects Cantersteen</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+	<script language="JavaScript">
+	function checkPostalCode(pCode)
+	{
+		if (isNaN(pCode))
+		{
+		alert("Postal code is not numeric.");
+		}
+		else
+			if (pCode.length != 4)
+			{
+			alert("Postal code for Belgium requires exact 4 digits.");
+			}
+	}
+	</script>
+  </head>
+  <body>
+  <div id="block">
+    <div id="branding">
+      <h1><a href="index.html" title="Return to the home page"><img src="images/logo.gif" alt="Architects Cantersteen" /></a></h1>
+      <p id="address">
+        Address: Naamsestraat 108, 3500 Hasselt<br />
+        Phone: 011/21 44 44<br />
+        Fax: 011/21 44 55<br />
+        Email: <a href="mailto:info@cantersteen.be?subject=Website%20More%20Info%20Required&amp;cc=boss@cantersteen.be">info@cantersteen.be</a>
+      </p>
+    </div>
+    <ul id="navigation">
+      <li><a href="index.html">About us</a></li>
+      <li><a href="slide01.html" target="_blank">Our work</a></li>
+      <li><a href="design.html">Our designs</a></li>
+      <li><a href="history.html">History of architecture</a></li>
+      <li><a href="architect.html">Becoming an architect</a></li>
+      <li class="current">Contact us</li>
+    </ul>
+    <div id="main-content">
+      <h2>Contact us</h2>
+      <p> To contact us with any questions or comments, please use the form below. We will respond as soon as we can.</p>
+      <p>All fields are required.</p>
+    <form method="post" action="/path/to/formhandler/">
+    <fieldset id="contact">
+      <legend>Send us your questions</legend>
+      <ol>
+        <li>
+          <label for="name">Name</label> 
+          <input type="text" id="name" name="name" />
+        </li>
+      
+        <li>
+          <label for="email">Email</label> 
+          <input type="text" id="email" name="email" />
+        </li>
+		
+        <li>
+          <label for="postalcode">Postal Code</label> 
+          <input onBlur="checkPostalCode(this.value);"id="postalcode" name="postalcode" cols="40" rows="10" />
+        </li>
+		
+        <li>
+          <label for="subject">Subject</label> 
+          <select id="subject" name="subject">
+            <option value="" selected="selected">-- select --</option>
+            <option value="Info">I'd like to know more about Cantersteen</option>
+            <option value="Design">I have a question about Cantersteen designs</option>
+            <option value="Job">I have a question about working for Cantersteen</option>
+            <option value="Building">I want to build a house with Cantersteen</option>
+          </select>
+        </li>
+		
+        <li>
+          <label for="message">Message</label> 
+          <textarea id="message" name="message" cols="40" rows="5"></textarea>
+        </li>
+		
+        <li>
+          <input type="submit" id="submit" name="submit" value="Send" />
+          <input type="reset" id="reset" name="reset" value="Clear" />
+        </li>
+      </ol>
+    </fieldset>
+  </form>
+    </div>
+    <div id="tagline">
+    <p>Making your dreams come true</p>
+    </div>
+    <p id="copyright">&copy; 2009 Architects Cantersteen</p>
+  </div>
+  </body>
+</html>

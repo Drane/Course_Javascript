@@ -1,0 +1,9 @@
+function hello() {
+
+    var i = 3;
+    switch (i) {
+        case ((i >= 0 && i <= 8) ? i : -1): document.body.innerText = "Ne les mange pas !"; break;
+        case ((i >= 9 && i <= 12) ? i : -1): document.body.innerText = "Va s'y tu peux les manger."; break;
+        default: document.body.innerText = "Retourne à l'école.";
+    }
+}

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Architects Cantersteen</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<script type="text/javascript">
+var request = false;
+var current = "";
+try {
+		request = new XMLHttpRequest();
+} catch (ms) {
+	try {
+		request = new ActiveXObject("Msxml2.XMLHTTP");
+	} catch (ms2) {
+		request = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+}
+
+function collapse() {
+	if (current != "") {
+		document.getElementById(current).innerHTML = "";
+		document.getElementById("architect").innerHTML = "Architect Portrait";
+	}
+}
+
+function sendRequest() {
+ 	var file = "architects/"+current+".txt";
+	request.open("GET", file, true);
+	request.onreadystatechange = updateArchitect;
+	request.send(null);
+}
+
+function getArchitect(name) {
+	collapse();
+	if (current != name) {
+		current = name;
+    	sendRequest();
+    } else {
+    	current = "";
+    }
+}
+function updateArchitect() {
+	if (request.readyState == 4 && request.status == 200) {
+		var answer = request.responseText;
+		document.getElementById(current).innerHTML = answer;
+		document.getElementById("architect").innerHTML = "<img src='images/architects/" +current+".jpg' />";
+	}
+}
+    </script>
+</head>
+<body>
+<div id="block">
+<div id="branding">
+<h1><a href="index.html" title="Return to the home page"><img
+        src="images/logo.gif" alt="Architects Cantersteen" /></a></h1>
+<p id="address">Address: Naamsestraat 108, 3500 Hasselt<br />
+Phone: 011/21 44 44<br />
+Fax: 011/21 44 55<br />
+Email: <a
+	href="mailto:info@cantersteen.be?subject=Website%20More%20Info%20Required&amp;cc=boss@cantersteen.be">info@cantersteen.be</a>
+</p>
+</div>
+<ul id="navigation">
+	<li><a href="index.html">About us</a></li>
+	<li><a href="slide01.html" target="_blank">Our work</a></li>
+	<li><a href="design.html">Our designs</a></li>
+	<li class="current">History of architecture</li>
+	<li><a href="architect.html">Becoming an architect</a></li>
+	<li><a href="contact.html">Contact us</a></li>
+</ul>
+<div id="main-content">
+<h2>History of architecture</h2>
+<h3>The newest form of architecture</h3>
+<p>Dynamic architecture</p>
+<object width="480" height="295">
+	<param name="movie" value="http://www.youtube.com/v/RzQazjw-4jI"></param>
+	<param name="allowFullScreen" value="true"></param>
+	<param name="allowscriptaccess" value="always"></param>
+	<embed src="http://www.youtube.com/v/RzQazjw-4jI&hl=en&fs=1"
+		type="application/x-shockwave-flash" allowscriptaccess="always"
+		allowfullscreen="true" width="480" height="295"></embed> </object>
+<h3>Introduction</h3>
+<p>More information about the history of architectures can be found
+on <a href="http://en.wikipedia.org/wiki/Architecture#History"
+	target="_blank">Wikipedia</a>.</p>
+<p>Architecture is the science of designing and making a building.
+While architecture is a science, it is also an art. Architecture is the
+most useful of the arts as well as the oldest.</p>
+<p>The Greeks were among the earliest architects. Greek architecture
+has had a profound influence on later forms of architecture. Modern
+architecture is one of the newer forms of architecture and is credited
+with giving architecture a creative boost. The newest form of
+architecture is postmodern architecture.</p>
+<h3>Greek architecture</h3>
+<p>There are 2 types of Greek architecture: sacred architecture and
+secular architecture.</p>
+<p>The temple buildings where gods and goddesses were worshiped and
+sacrifices were made characterize sacred architecture. Worship of gods
+and goddesses took place inside the temples, while sacrifices took place
+at the altars outside. Often an altar was built before the temple, but
+the earliest monumental buildings were temples. Temples were built to be
+strong and were carefully maintained. They had to be replaced only if an
+earthquake, a fire, or an attacking enemy destroyed them. A colonnade
+that provided shelters for visitors enclosed Greek temples. That is why
+some of the buildings are still standing, such as the Acropolis.</p>
+<p>Greek cities were social, commercial, and were often governmental
+centers for large communities along the sea. In a Greek city there were
+public baths, a gymnasium, a stadium, and a theater. Greek sanctuaries
+were often in the countryside. Some were famous healing centers.</p>
+<p>While revived versions of Greek architecture, such as the White
+House and most capitol buildings, stand today in modern cities, new
+styles of architecture are more common. One of the most interesting is
+Modern architecture.</p>
+<h3>Modern architecture</h3>
+<p>Modern architecture is totally different from Greek architecture.
+Modern architecture foreshadowed how buildings of the future would look.
+Modern architecture is characterized by the use of simple shapes and
+geometry, and it employs the use of more and different materials than
+ever before. The United Nations Headquarters in New York City and the
+House on the Rocks by Frank Lloyd Wright are well-known examples of
+modern architecture. Wright believed that modern architecture should use
+nature and be modeled after nature. This idea became a springboard for
+postmodern architecture.</p>
+<p>Most modern architecture is constructed of steel with lots of
+glass. Modern architects prescribe to the theory, articulated by Ludwig
+Mies, that less is more. “Less is more” means that even though a
+structure is simple it can still look good. Modern architecture created
+by Walter Groupis, Ludwig Mies, and Miles Van Der Rohe prevailed during
+the twentieth century. During this time, many architects tried to clone
+modern architecture, and many buildings began to resemble ugly, cement
+boxes with glass windows. This has given modern architecture a bad name.</p>
+<h3>Postmodern architecture</h3>
+<p>In reaction to the cement box clones of modern architecture,
+Robert Venturi created a new type of architecture—postmodern
+architecture. Postmodern architecture began to emerge in the early
+1950s. Venturi’s form of architecture was often picturesque and
+dramatic, moving away from the "less is more” dictum. The postmodern
+architects combined elements of the past, such as columns and arches
+borrowed from the Greeks, and added to them the simplicity of modern
+architecture to create a medium. Postmodernism joins the past and
+present. Buildings such as the opera house in Sydney and Robert Stern’s
+graceful beach cottage are well known examples of postmodern
+architecture.</p>
+<h3>Key architects</h3>
+<p>The following lists several key architects and their
+contributions. Click on each to know more...</p>
+<table>
+<tr>
+<td width="190" valign="top">
+<div id="architect">Architect Portrait</div>
+</td>
+<td valign="top">
+<dl>
+	<dt onclick="getArchitect('vitrivus');">Vitrivus</dt>
+	<dd id="vitrivus"></dd>
+	<dt onclick="getArchitect('daedalus');">Daedalus</dt>
+	<dd  id="daedalus"></dd>
+	<dt onclick="getArchitect('watton');">Sir Henry Watton</dt>
+	<dd id="watton"></dd>
+	<dt onclick="getArchitect('pallado');">Andrea Pallado</dt>
+	<dd id="pallado"></dd>
+	<dt onclick="getArchitect('roche');">Miles Van Der Roche</dt>
+	<dd id="roche"></dd>
+	<dt onclick="getArchitect('aalto');" >Hugo Alvar Henric Aalto</dt>
+	<dd id="aalto"></dd>
+	<dt onclick="getArchitect('saarinen');">Eero Saarinen</dt>
+	<dd id="saarinen"></dd>
+	<dt onclick="getArchitect('tange');">Kenzo Tange</dt>
+	<dd id="tange"></dd>
+	<dt onclick="getArchitect('corbusier');">Le Corbusier</dt>
+	<dd id="corbusier"></dd>
+</dl>
+</td>
+</tr>
+</table>
+</div>
+<div id="tagline">
+<p>Making your dreams come true</p>
+</div>
+<p id="copyright">&copy; 2009 Architects Cantersteen</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+===============================  Exercises JSC010  ==============================
+
+NOTE: All exercises to be made on page index.html, except mentioned otherwise.
+Take a copy of index.html to leave the original code intact, then create your exercise in the copied file.
+
+Chapter 1:
+----------
+
+Ex. 1:
+Use a document.write instruction to write the first paragraph "Architects Cantersteen exist from 1986..." on the screen.
+
+Ex. 2:
+Use a function, an event and an alert to write a welcome message on the screen.
+
+Ex. 3:
+Like Ex. 2, but use an external script for showing the welcome message.
+
+Chapter 2 & 3:
+--------------
+
+Ex. 4: 
+Use a for loop to create a table showing an evolution in houses and apartments build over the last years:
+- 2005: amount houses	is 15, amount apartements is 3
+- 2006: amount houses	is 90, amount apartements is 18
+
+Ex. 5:
+Use an If... else, new Date(); and getDay(); to change the tagline: show a different tagline for each weekday.
+
+Ex. 6:
+use a switch(); and case to find out what browser a visitor is using. Then, depending on the browser, show an appropriate message below the second paragraph.
+
+Chapter 4:
+----------
+
+Ex. 7:
+Create a Guessing game in index.html. The game shows two checkboxes and a button.
+In the left checkbox a random number between 1 and 10 must be shown.
+The visitor must try to guess what the next random number will be.
+He can enter his guess in the second checkbox.
+When clicking the button the script creates a new random number and compares it with the user's number.
+Then an appropriate alert must be shown.
+
+Ex. 8: on slide01.html
+Create a slidshow with buttons "previous" and "next". Once the last picture is shown, an alert must mention "Last picture."
+When going back and the first picture is shown, an alert must mention "First pictures." 
+
+Chapter 5:
+----------
+
+Ex. 9: 
+Use a dynamic Date() for writting the year in the footer of the page.
+
+Ex. 10:
+Use a constructor to write the dates in the first paragraph: 1986 and 1987.
+
+Ex. 11:
+Use Math(); to show a random number of current visitors on this site (between 0 and 99).
+
+Ex. 12:
+Use an Array(); to replace the menu on the left. Use an external JS file.
+
+Chapter 6:
+----------
+
+Ex. 13:
+Create a script to open the page History in a new browser window or tab.
+
+Ex. 14:
+Create a link for the heading "About Us". Clicking on this link must open a new window.
+Decorations for this new window: show the statusbar and a scrollbar, width: 350, height: 170.
+The new window must show a page (to create) containing contact information. This page must contain a link or button to close the new window.
+
+Ex. 15:
+In this exercise we'll create a price calculator. Create a button to open a prompt, asking the visitor for the amount of square meters to rebuild.
+The script must multiply this number with 250 and then show the result in an alert.
+
+Ex. 16: on Contact page
+After adding your name and lastname in the name field, two things must happen:
+- Name and lastname must be transformed to uppercase.
+- The email field must show "name.lastname@gmail.com"
+
+Ex. 17: on slide01.html
+Instead of using a meta refresh in HTML, create a slideshow for displaying all pictures for 2 seconds.
+
+Ex. 18: on Contact and Index page
+Once a visitor has entered his name in the name field, the name must be stored in a cookie called "CantersteenCookie".
+When opening the index page again, an alert must show the cookiename and the name of the visitor.
+If there's no cookie set, the alert message may not be shown.
+
+Chapter 7:
+----------
+
+Ex. 19: on contact.html
+When this page loads, the cursor must be set in the first filed (name).
+
+Ex. 20: on contact.html
+Create a dynamic counter for the text area showing the amount of left characters a visitor can enter. Max = 50.
+
+Ex. 21:
+Sow an alert when the user closes the index page.
+
+Chapter 8:
+----------
+
+Ex. 22: on contact.html
+Add validation to the form:
+- all fields must contain info
+- e-mailaddress muist contain "@".
+- the visitor may not leave the subject field unselected.
+
+Ex. 23: on contact.html
+Add a field "Postal Code" to the existing form. Add validation: postal code must be numeric and must have a length of 4 digits.
+
+Chapter 9:
+----------
+
+Ex. 24:
+Add three links "smaller", "bigger" and "normal" on top of the index page. Clicking on smaller must lower the font size with 1pt, clicking on bigger must raise the font size with 1pt, clicking an normal must set a font size of 11pt.
+
+Ex. 25:
+Create a script to add a yellow background color for the first paragraph. This color must fade to white and then fade to yellow again.
+
+Ex. 26: on slide01.html
+Add a button beneath the picture with "More Info". Clicking on this button must show information on the right side, of the picture.
+
+Chapter 10:
+-----------
+
+Ex. 27: on a new page
+Create a book object displaying: "You requested (4) times (Learning JavaScript) by (Shelley Powers) published in (2009).
+Price for (Learning JavaScript) is (35)€ each. Total price is: (140)€." The elements between ( ) must be created by the Book object itself.
+
+Chapter 11:
+-----------
+
+Ex. 28: on history.html
+Use Ajax to fetch the architect information from the bottom of the page. Show the detailed information for the corresponding architect when the user clicks on his name. Clicking on the same name will collapse the information. Clicking on a new name, will collapse the previous architect's information, and show the new one. At the same time, show a picture of the architect from the /images/architects directory. You can use a table to put the image to the left of the architect names.

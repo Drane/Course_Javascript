@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Architects Cantersteen</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+	<script language="JavaScript">
+	function setRandom()
+	{
+	var rdmnbr = Math.random();
+	rdmnbr = (rdmnbr * 9) + 1;
+	var sendrdmnbr = Math.round(rdmnbr);
+	document.myForm.scriptGuess.value = sendrdmnbr;
+	}
+	
+	function startRandom()
+	{
+	setRandom();
+	if (document.myForm.scriptGuess.value == document.myForm.myGuess.value)
+		{
+		alert ("Congratulations! \n\nWe have a winner!");
+		}
+		else
+		{
+		alert("Try again.");
+		}
+	}	
+	</script>
+  </head>
+  <body onLoad="setRandom()">
+  <div id="block">
+    <div id="branding">
+      <h1><img src="images/logo.gif" alt="Architects Cantersteen" /></h1>
+      <p id="address">
+        Address: Naamsestraat 108, 3500 Hasselt<br />
+        Phone: 011/21 44 44<br />
+        Fax: 011/21 44 55<br />
+        Email: <a href="mailto:info@cantersteen.be?subject=Website%20More%20Info%20Required&amp;cc=boss@cantersteen.be">info@cantersteen.be</a>
+      </p>
+    </div>
+    <ul id="navigation">
+      <li class="current">About us</li>
+      <li><a href="slide01.html" target="_blank">Our work</a></li>
+      <li><a href="design.html">Our designs</a></li>
+      <li><a href="history.html">History of architecture</a></li>
+      <li><a href="architect.html">Becoming an architect</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+    </ul>
+    <div id="main-content">
+    <h2>Guessing Game</h2>
+    <p>
+	Which random number will appear in the left checkbox? <br>Enter a number (between 1 and 10) in the right checkbox and click the button to see the result (Price: free price calculation!).
+    </p>
+    <form name="myForm">
+	<input type="text" size="2" name="scriptGuess" id="scriptGuess">
+	<input type="text" size="2" name="myGuess" id="myGuess" maxlength="2">
+	<input type="submit" value="Try!" onClick="startRandom(myGuess.value,scriptGuess.value);">
+    </form>
+    </div>
+    <div id="tagline">
+    <p>Making your dreams come true</p>
+    </div>
+    <p id="copyright">&copy; 2009 Architects Cantersteen</p>
+  </div>
+  </body>
+</html>

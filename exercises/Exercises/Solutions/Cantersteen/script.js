@@ -1,0 +1,1 @@
+alert("Welcom to Cantersteen Online!\n\n Read more about our projects.");

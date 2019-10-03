@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mosselen</title>
+</head>
+<body onload="myFunction()">
+<script>
+    function myFunction() {
+        var month = "oktober";
+        var myMessage;
+        switch (month) {
+            case 'september':
+            case 'Septembre':
+            case 'September':
+            case 'oktober':
+            case 'October':
+            case 'Octobre':
+            case 'november':
+            case 'November':
+            case 'Novembre':
+                myMessage = "You can eat mussels in " + month;
+               break;
+            case 'mei' :
+            case 'Mai' :
+            case 'May':
+            case 'juni':
+            case 'Juin':
+            case 'June':
+            case 'juli':
+            case 'Juillet':
+            case 'July':
+                myMessage = "You cannot eat mussels in " + month;
+                break;
+            default :
+                myMessage = "I don't know if you can eat mussels in " + month;
+                break;
+
+        }
+        alert(myMessage);
+    }
+
+</script>
+</body>
+</html>
