@@ -13,4 +13,12 @@ Notes JS Course
     aString3 === 3; //returns false
     ```
 
+* For in (Enumerable Properties) VS For of (Iterable Collections):
+
+    ```javascript
+    var programLanguages = new Array('C++','Pascal','FORTRAN','BASIC','C#','Java','Perl','JavaScript');
+    for (var item in programLanguages) {} // 1 2 3 4 ...
+    for (var item of programLanguages) {} // 'C++','Pascal', ...
+    ```
+
 * 

@@ -5,8 +5,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Architects Cantersteen</title>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="scripts/script.js"></script>
+    <script>
+      function onUnload(event){
+          alert('Bye bye!');
+      }
+    </script>
   </head>
-  <body>
+  <body onmousedown="onMouseDownBody()" onunload="onUnload()">
   <div id="block">
     <div id="branding">
       <h1><a href="index.html" title="Return to the home page"><img src="images/logo.gif" alt="Architects Cantersteen" /></a></h1>
@@ -56,7 +62,13 @@
       
         <li>
           <label for="message">Message</label> 
-          <textarea id="message" name="message" cols="40" rows="10"></textarea>
+          <textarea id="message" name="message" cols="40" rows="10"
+            onkeyup="onKeyUpMessage()"></textarea>
+        </li>
+
+        <li>
+          <label for="charsLeft">Chars left</label>
+          <input type="text" id="charsLeft" value="50" disabled/>
         </li>
       
         <li>
