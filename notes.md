@@ -21,4 +21,15 @@ Notes JS Course
     for (var item of programLanguages) {} // 'C++','Pascal', ...
     ```
 
-* 
+* In strict mode is "this" by default undefined i.s.o. window!
+
+* Let's summarize the rules, in order of precedence, for determining this from a function call's call-site
+  * Is the function called with new binding?
+    * var bar = new foo()
+  * Is the function called with explicit or hard binding?
+    * var bar = foo.call(obj)
+  * Is the function called with implicit object binding?
+    * var bar = obj.foo()
+  * Otherwise, use default binding...
+    * var bar = foo()
+

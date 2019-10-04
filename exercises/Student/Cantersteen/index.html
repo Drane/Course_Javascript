@@ -1,10 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Architects Cantersteen</title>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="scripts/index.js"></script>
   </head>
   <body>
   <div id="block">
@@ -26,9 +27,13 @@
       <li><a href="contact.html">Contact us</a></li>
     </ul>
     <div id="main-content">
+    <p>
+      <label for="charsLeft">Visitors counter</label>
+      <input type="text" id="visitorCounter" value="0" disabled="">
+    </p>
     <h2>About us</h2>
     <p>
-      Architects Cantersteen exist from 1986. Our extended portfolio has been awarded with national and international prizes. We have continuously been certified in the ISO 9002 standard since 1987.
+      Architects Cantersteen exist from <span id="fromDate">...1986</span>. Our extended portfolio has been awarded with national and international prizes. We have continuously been certified in the ISO 9002 standard since <span id="sinceDate">...1987</span>.
     </p>
     <h2>What we can do for you...</h2>
     <p>

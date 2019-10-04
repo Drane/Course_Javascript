@@ -9,6 +9,7 @@ function onMouseDownBody(nsEvent){
 function onLoadWindow(event){
     console.info('Focussing... Event:', event);
     document.getElementById('name').focus();
+    setDynamicYear();
 }
 
 window.onload=onLoadWindow;
@@ -18,3 +19,12 @@ function onKeyUpMessage(){
     let messageLengthLeft = 50 - parseInt(document.getElementById('message').value.length);
     document.getElementById('charsLeft').value = messageLengthLeft;    
 }
+
+function onUnload(event){
+  alert('Bye bye!');
+}
+
+function setDynamicYear(){
+    document.getElementById("dynamicYear").innerHTML = (new Date()).getFullYear();
+}
+
