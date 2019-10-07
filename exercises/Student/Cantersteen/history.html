@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Architects Cantersteen</title>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="scripts/history.js"></script>
   </head>
   <body>
   <div id="block">
@@ -51,7 +52,7 @@
 	  <p>In reaction to the cement box clones of modern architecture, Robert Venturi created a new type of architecture—postmodern architecture. Postmodern architecture began to emerge in the early 1950s. Venturi’s form of architecture was often picturesque and dramatic, moving away from the "less is more” dictum. The postmodern architects combined elements of the past, such as columns and arches borrowed from the Greeks, and added to them the simplicity of modern architecture to create a medium. Postmodernism joins the past and present. Buildings such as the opera house in Sydney and Robert Stern’s graceful beach cottage are well known examples of postmodern architecture.</p>
     <h3>Key architects</h3>
     <p>The following lists several key architects and their contributions.</p>
-    <dl>
+    <!-- <dl>
       <dt>Vitrivus</dt>
       <dd>Ancient Greek Architect. Vitrivus said, "architecture is a building that incorporates utilitas, firmitras, and venustas.” English architects during the middle ages translated this to mean commodities, firmness, and delights. Vitrivus wrote one of the most important treatises in history.</dd>
 	    <dt>Daedalus</dt>
@@ -70,7 +71,39 @@
 	    <dd>A Japanese architect who has designed structures throughout Japan and the world.  His early buildings were influenced by the architect Le Corbusier.  Tange’s ideas are more traditionally Japanese.  After 1960, Tange’s interests leaned towards urban planning.  His concept for housing to be built over the Bay of Tokyo put forth temple-shaped clusters of apartments, connected by vertebrae containing transportation links.</dd>
 	    <dt>Le Corbusier</dt>
 	    <dd>A Swiss-French architect who played a crucial part in the making of modern architecture.  He began working in Paris with August Perret and then worked for a number of months in Berlin with an industrial designer by the name of Peter Behrens, where he met the future Bauhaus leaders Miles Van Der Roche and Walter Gropius. Le Corbusier is recognized as an important 20th century innovator.</dd>
-	  </dl>
+    </dl> -->
+    
+
+    <table>
+      <tr>
+      <td width="190" valign="top">
+      <div id="architect">Architect Portrait</div>
+      </td>
+      <td valign="top">
+      <dl>
+        <dt onclick="getArchitect('vitrivus');">Vitrivus</dt>
+        <dd id="vitrivus"></dd>
+        <dt onclick="getArchitect('daedalus');">Daedalus</dt>
+        <dd  id="daedalus"></dd>
+        <dt onclick="getArchitect('watton');">Sir Henry Watton</dt>
+        <dd id="watton"></dd>
+        <dt onclick="getArchitect('pallado');">Andrea Pallado</dt>
+        <dd id="pallado"></dd>
+        <dt onclick="getArchitect('roche');">Miles Van Der Roche</dt>
+        <dd id="roche"></dd>
+        <dt onclick="getArchitect('aalto');" >Hugo Alvar Henric Aalto</dt>
+        <dd id="aalto"></dd>
+        <dt onclick="getArchitect('saarinen');">Eero Saarinen</dt>
+        <dd id="saarinen"></dd>
+        <dt onclick="getArchitect('tange');">Kenzo Tange</dt>
+        <dd id="tange"></dd>
+        <dt onclick="getArchitect('corbusier');">Le Corbusier</dt>
+        <dd id="corbusier"></dd>
+      </dl>
+      </td>
+      </tr>
+      </table>
+
 	  </div>
     <div id="tagline">
     <p>Making your dreams come true</p>

@@ -1,0 +1,1 @@
+http://ecoapp-test/indexpub/api/indpub/baselist

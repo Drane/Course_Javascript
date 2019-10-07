@@ -33,3 +33,32 @@ Notes JS Course
   * Otherwise, use default binding...
     * var bar = foo()
 
+* Class with multiple methods from different classes:
+
+    ```javascript
+    let Bridge = Base => class extends Base {
+      evasiveManouvres() { console.log("It's a trap! Begin evasive manouvres!"); }
+    };
+
+    let LasersCanons = Base => class extends Base {
+      fireLasers() { console.log("Concentrate all fire on that Super Star Destroyer!"); }
+    };
+
+    let FighterBays = Base => class extends Base {
+      launchFighters() { console.log('Launch the X-Wings!'); }
+    };
+
+    class Starship {
+      constructor(captain) { this.captain = captain; }
+    }
+
+    class MonCalamariCruiser extends Bridge(LasersCanons(FighterBays(Starship))) {
+      constructor(captain) { super(captain); this.side = 'rebels'; }
+    }
+
+    let c = new MonCalamariCruiser('Admiral Ackbar');
+    console.log(c.captain, c.side);
+    c.evasiveManouvres();
+    c.fireLasers();
+    c.launchFighters();
+    ```
